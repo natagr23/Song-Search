@@ -6,9 +6,19 @@ const SongTable = memo(({ songValues }) => {
 
   return (
     <tbody>
-      {songValues.map((songValue) => (
-        <SongRow key={songValue.id} songValue={songValue} />
-      ))}
+      {songValues.length === 0 ? (
+        <tr>
+          <td>
+            <div className="alert alert-primary">
+              No hay canciones disponibles con esa frase
+            </div>
+          </td>
+        </tr>
+      ) : (
+        songValues.map((songValue) => (
+          <SongRow key={songValue.id} songValue={songValue} />
+        ))
+      )}
     </tbody>
   );
 });
