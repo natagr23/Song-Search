@@ -100,7 +100,7 @@ const App = () => {
   return (
     <div className="p-3 mb-2 bg-light text-dark">
       <h1 class="mb-4 text-xl font-semibold text-gray-700 dark:text-gray-200">
-        Busca tus canciones Favoritas
+        Busca tus canciones Favoritas version 2
       </h1>
       <div className="container mb-2">
         <input //vincular con un estado
